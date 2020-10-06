@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"a31\startup_stm32f103xb.o"
+"a31\main.o"
+"a31\gpio.o"
+"a31\tim.o"
+"a31\usart.o"
+"a31\stm32f1xx_it.o"
+"a31\stm32f1xx_hal_msp.o"
+"a31\stm32f1xx_hal_gpio_ex.o"
+"a31\stm32f1xx_hal_tim.o"
+"a31\stm32f1xx_hal_tim_ex.o"
+"a31\stm32f1xx_hal.o"
+"a31\stm32f1xx_hal_rcc.o"
+"a31\stm32f1xx_hal_rcc_ex.o"
+"a31\stm32f1xx_hal_gpio.o"
+"a31\stm32f1xx_hal_dma.o"
+"a31\stm32f1xx_hal_cortex.o"
+"a31\stm32f1xx_hal_pwr.o"
+"a31\stm32f1xx_hal_flash.o"
+"a31\stm32f1xx_hal_flash_ex.o"
+"a31\stm32f1xx_hal_exti.o"
+"a31\stm32f1xx_hal_uart.o"
+"a31\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "A31\A31.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "A31.map" -o A31\A31.axf
